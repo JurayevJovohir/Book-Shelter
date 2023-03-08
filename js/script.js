@@ -188,7 +188,6 @@ function bookMarkPush(data) {
       );
     }
   }
-
   bookmarkBooks =
     JSON.parse(window.localStorage.getItem("localBookmark")) || [];
   renderBookmark(bookmarkBooks, elBookmark);

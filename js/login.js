@@ -7,7 +7,7 @@ let elPassword = document.querySelector(".input-password");
 elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
-  let inputlogin = elLogin.value;
+  let inputLogin = elLogin.value;
   let inputPassword = elPassword.value;
 
   fetch("https://reqres.in/api/login", {
@@ -16,7 +16,7 @@ elForm.addEventListener("submit", function (evt) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      email: inputlogin,
+      email: inputLogin,
       password: inputPassword,
     }),
   })
